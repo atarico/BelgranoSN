@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "historia.scss";
+@import "formulario.scss";
+@import "temporada.scss";
+@import "deportes.scss";
+
+.body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f00;
+    color: #fff;
+}
+
+
+header{
+    display: none;
+    margin-bottom: 1rem;
+    .header{    
+        background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/frente_del_club.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        height: 100%;
+        border-bottom: 3px solid red;
+        .header-logo{
+            width: 20rem;
+        }
+        .title-conteiner{
+            height: 100%;
+            h1{
+                font-weight: bold;
+                font-size: 4em;
+                margin-top: 7rem;
+                letter-spacing: 3px;
+            }
+        }
+    
+    }
+}
+
+
+/* ---- NAVBAR ---- */
+
+.navbar{
+    border-top: 3px solid #ff0;
+    background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/frente_del_club.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1.5em;
+}
+.navbar-logo{
+    width: 5rem;
+    border-radius: 50%;
+}
+.navbar-logo:hover{
+    box-shadow: 0px 0px 10px 3px #fff;
+    transition: all 0.4s;
+}
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link{
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #ff0;
+    background: #f00;
+    border-radius: 2rem;
+    transition: all 0.5s;
+    transform: scale(0.9);
+    box-shadow: 0px 0px 3px 3px #ff0;
+}
+
+.navbar{
+    border-bottom: 3px solid #ff0;
+    /* position: sticky;
+    z-index: 100;
+    width: 100%;
+    background: #000;*/
+} 
+
+
+/* ---- CARDS ---- */
+.season{
+    
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    .card{
+        a{
+            
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0px 0px 10px 5px #ff0;
+
+            .img-conteiner{
+                display: flex;
+                align-items: center;
+                .card-img, .card-img-bottom{
+                    border-radius: 20px;
+                }
+            }
+            h5{
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                margin-top: 1.5rem;
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+        &:hover{
+             /* img{
+                opacity: 0.4;
+            } */
+            box-shadow: 0px 0px 10px 5px #ff0;
+            h5{
+                display: block;
+            }
+            transition: all 0.5s;
+        }
+    }
+}
+
+.news{
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+    background-image: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)), url(../media/img/bg_hinchada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .news-title{
+        padding-top: 2rem;
+        text-align: center;
+        font-size: 3em;
+        text-transform: uppercase;
+        font-weight: 600;
+        opacity: 0.8;
+    }
+    .cards-conteiner{
+        width: 90%;
+        margin: 3rem auto 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+
+        .card{
+            border: #000;
+            border-radius: 1rem;
+            width: 25rem;
+            margin-bottom: 3rem;
+            
+
+            a{
+                background: #f00;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 0.5rem;
+    
+
+                .conteiner-img{
+                    border-bottom: 2px solid #ff0;
+                    overflow: hidden;
+                    transition: all 500ms ease;
+
+                    img{
+                        /* width: 100%;
+                        height: 500px; */
+                        transition: all 500ms ease;
+                        &:hover{
+                            transform: scale(1.15);
+                            transition: all 0.5s;
+                            box-shadow: 0px 0px 6px 3px #ff0;
+                        }
+                    }
+                }
+                .titulo{
+                    padding: 15px;
+                    color: #ff0;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* ---- LISTA DE DEPORTES ---- */
+
+.deportes{
+    padding-bottom: 3rem;
+    background-image: linear-gradient(rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0.7)), url(../media/img/equipos_collage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .deportes-titulo{
+        background-color: #f00;
+        color: #ff0;
+        text-align: center;
+        padding: 12px;
+    }
+    ul{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem auto;
+
+        li{
+            margin: 1rem;
+            list-style: none;
+            font-size: 1.5em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                padding: 15px;
+
+                &:hover{
+                    color: #ff0;
+                    background: #f00;
+                    border-radius: 2rem;
+                    transition: all 0.5s;
+                    transform: scale(0.9);
+                    box-shadow: 0px 0px 3px 3px #ff0;
+
+                }
+            }
+        }
+
+    }
+
+}
+
+
+/* ---- FOOTER ---- */
+$ig:#eb4ed4;
+$wp: #25d366;
+$fb: #3865c5;
+$yt: #e43933;
+
+@mixin redes ($hover) {
+
+    padding: 10px;
+    color: #fff;
+
+    &:hover{
+        color: $hover;
+        transform: scale(1.2);
+        transition: all 0.4s;
+    }
+}
+
+
+footer{
+    margin-top: 2rem;
+    background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/escudo_playon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .conteiner{
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        h3{
+            text-align: center;
+            padding: 20px;
+            text-transform: uppercase;
+            font-size: 2em;
+            font-weight: 600;
+        }
+        .footer__{
+            display: flex;
+            justify-content: space-around;
+            a{
+                font-size: 3rem;
+              .fa-instagram{
+                  @include redes ($ig)
+              }
+              .fa-facebook{
+                @include redes ($fb)
+            }
+            .fa-youtube{
+                @include redes ($yt)
+            }
+            .fa-whatsapp{
+                @include redes ($wp)
+            }  
+            }
+        }
+        p{
+            margin: 3rem;
+            margin-bottom: 0;
+            padding-bottom: 3rem;
+        }
+    }
+}
+
+
+@import "@media.scss";
+
+

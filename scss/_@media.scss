@@ -1,0 +1,91 @@
+
+@media (min-width: 1024px){
+    form{
+        max-width: 900px;
+    }
+
+}
+
+
+@media screen and (min-width: 990px) {
+
+    header{
+        display: block;
+
+    }
+
+    .navbar{
+        background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/la14.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .navbar-logo{
+        display: none;
+    }
+    .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link{
+
+        padding: 10px 10px;
+        margin: 0 2rem;
+    }
+
+    #carouselExampleCaptions {
+      max-width: 1200px;
+      margin: auto; 
+    }
+
+    .season{
+        .card{
+            a{
+                box-shadow: none;
+                h5{
+                    font-size: 2.2em;
+                    margin-top: 10rem;
+                    padding-top: 4rem;
+                    display: none;
+                }
+            }
+            &:hover{
+                img{
+                opacity: 0.4;
+                }
+                box-shadow: 0px 0px 10px 5px #ff0;
+                h5{
+                    display: block;
+                }
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    .news{
+        .cards-conteiner{
+            .card{
+                a{
+                    .conteiner-img{
+                        img{
+                            width: 100%;
+                            height: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .deportes{
+        ul{
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            li{
+                width: 25%;
+            }
+        }
+    }
+    
+
+    
+}

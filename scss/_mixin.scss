@@ -1,0 +1,62 @@
+$ig:#b14eeb;
+$wp: #25d366;
+$fb: #3865c5;
+$yt: #e43933;
+
+@mixin lista () {
+
+    ul{
+    
+    margin: 3rem;
+    
+    list-style: none;
+    
+    padding: 1rem;
+    
+    display: flex;
+    
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+    
+    li{
+    
+    
+        a{
+        
+            color: #ff0000;
+            
+            text-decoration: none;
+            
+            &:hover{
+                color: #fff;
+            }
+            
+            i{
+            
+            padding: 10px;
+            
+            }
+        
+        }
+    
+    }
+    
+    }
+    
+    }
+    @mixin contenedor () {
+        margin: auto;
+        width: 90%;
+    }
+    @mixin redes ($hover) {
+
+        padding: 10px;
+        color: #fff;
+    
+        &:hover{
+            color: $hover;
+            transform: scale(1.2);
+            transition: all 0.4s;
+        }
+    }

@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.historia article {
+  background-image: linear-gradient(rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0.7)), url(../media/img/escudo_cancha_bochas.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .historia article div .historia-titulo {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 600;
+    padding: 20px; }
+  .historia article .historia-parrafos {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2rem; }
+
+#caja-comentarios {
+  padding: 50px 0px 50px 0px; }
+
+#boton {
+  font-weight: 600;
+  background-color: #24303c;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 5px #000; }
+
+#boton:hover {
+  cursor: pointer;
+  background-color: #f00;
+  transition: all 0.4s;
+  color: #ff0;
+  box-shadow: 0px 0px 10px #ff0; }
+
+.contact-title {
+  font-size: 3em;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+form {
+  width: 80%;
+  margin: auto;
+  background: rgba(107, 107, 107, 0.4);
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: 2px solid #f00; }
+  form h4 {
+    text-align: center;
+    color: #fff;
+    padding: 35px;
+    font-size: 28px; }
+  form input, form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    border: none;
+    box-shadow: 0px 0px 5px #000;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 7px; }
+  form textarea {
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%; }
+
+section .promociones {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 1200px; }
+  section .promociones .promociones-temporada .card {
+    margin: 2rem auto; }
+    section .promociones .promociones-temporada .card img {
+      width: 100%; }
+    section .promociones .promociones-temporada .card div h4 {
+      color: #000;
+      text-align: center;
+      text-transform: uppercase; }
+    section .promociones .promociones-temporada .card div p {
+      color: #000; }
+    section .promociones .promociones-temporada .card div h5 {
+      color: #000; }
+    section .promociones .promociones-temporada .card:hover {
+      transform: scale(1.1);
+      z-index: 10;
+      cursor: pointer;
+      transition: all 0.5s; }
+
+main {
+  background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/equipos_collage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  main section .deportes__pages {
+    background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/trofeos.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-bottom: 3px solid #ff0; }
+    main section .deportes__pages .pages__deportes-titulo {
+      background-color: #f00;
+      color: #ff0;
+      text-align: center;
+      padding: 12px; }
+    main section .deportes__pages .pages__deportes__lista ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap; }
+      main section .deportes__pages .pages__deportes__lista ul li {
+        margin: 1rem;
+        list-style: none;
+        font-size: 1.5em;
+        padding: 5%; }
+        main section .deportes__pages .pages__deportes__lista ul li a {
+          text-decoration: none;
+          color: #fff;
+          padding: 15px; }
+          main section .deportes__pages .pages__deportes__lista ul li a:hover {
+            color: #ff0;
+            background: #f00;
+            border-radius: 2rem;
+            transition: all 0.5s;
+            transform: scale(0.9);
+            box-shadow: 0px 0px 3px 3px #ff0; }
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f00;
+  color: #fff; }
+
+header {
+  display: none;
+  margin-bottom: 1rem; }
+  header .header {
+    background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/frente_del_club.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    border-bottom: 3px solid red; }
+    header .header .header-logo {
+      width: 20rem; }
+    header .header .title-conteiner {
+      height: 100%; }
+      header .header .title-conteiner h1 {
+        font-weight: bold;
+        font-size: 4em;
+        margin-top: 7rem;
+        letter-spacing: 3px; }
+
+/* ---- NAVBAR ---- */
+.navbar {
+  border-top: 3px solid #ff0;
+  background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/frente_del_club.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 1.5em; }
+
+.navbar-logo {
+  width: 5rem;
+  border-radius: 50%; }
+
+.navbar-logo:hover {
+  box-shadow: 0px 0px 10px 3px #fff;
+  transition: all 0.4s; }
+
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link {
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 1.5em;
+  text-transform: uppercase; }
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ff0;
+  background: #f00;
+  border-radius: 2rem;
+  transition: all 0.5s;
+  transform: scale(0.9);
+  box-shadow: 0px 0px 3px 3px #ff0; }
+
+.navbar {
+  border-bottom: 3px solid #ff0;
+  /* position: sticky;
+    z-index: 100;
+    width: 100%;
+    background: #000;*/ }
+
+/* ---- CARDS ---- */
+.season {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center; }
+  .season .card a {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px 5px #ff0; }
+    .season .card a .img-conteiner {
+      display: flex;
+      align-items: center; }
+      .season .card a .img-conteiner .card-img, .season .card a .img-conteiner .card-img-bottom {
+        border-radius: 20px; }
+    .season .card a h5 {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-top: 1.5rem;
+      color: #fff;
+      font-weight: 600; }
+  .season .card:hover {
+    /* img{
+                opacity: 0.4;
+            } */
+    box-shadow: 0px 0px 10px 5px #ff0;
+    transition: all 0.5s; }
+    .season .card:hover h5 {
+      display: block; }
+
+.news {
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+  background-image: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)), url(../media/img/bg_hinchada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .news .news-title {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.8; }
+  .news .cards-conteiner {
+    width: 90%;
+    margin: 3rem auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .news .cards-conteiner .card {
+      border: #000;
+      border-radius: 1rem;
+      width: 25rem;
+      margin-bottom: 3rem; }
+      .news .cards-conteiner .card a {
+        background: #f00;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 0.5rem; }
+        .news .cards-conteiner .card a .conteiner-img {
+          border-bottom: 2px solid #ff0;
+          overflow: hidden;
+          transition: all 500ms ease; }
+          .news .cards-conteiner .card a .conteiner-img img {
+            /* width: 100%;
+                        height: 500px; */
+            transition: all 500ms ease; }
+            .news .cards-conteiner .card a .conteiner-img img:hover {
+              transform: scale(1.15);
+              transition: all 0.5s;
+              box-shadow: 0px 0px 6px 3px #ff0; }
+        .news .cards-conteiner .card a .titulo {
+          padding: 15px;
+          color: #ff0;
+          font-weight: 600;
+          text-transform: uppercase; }
+
+/* ---- LISTA DE DEPORTES ---- */
+.deportes {
+  padding-bottom: 3rem;
+  background-image: linear-gradient(rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0.7)), url(../media/img/equipos_collage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .deportes .deportes-titulo {
+    background-color: #f00;
+    color: #ff0;
+    text-align: center;
+    padding: 12px; }
+  .deportes ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto; }
+    .deportes ul li {
+      margin: 1rem;
+      list-style: none;
+      font-size: 1.5em;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+      .deportes ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 15px; }
+        .deportes ul li a:hover {
+          color: #ff0;
+          background: #f00;
+          border-radius: 2rem;
+          transition: all 0.5s;
+          transform: scale(0.9);
+          box-shadow: 0px 0px 3px 3px #ff0; }
+
+/* ---- FOOTER ---- */
+footer {
+  margin-top: 2rem;
+  background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/escudo_playon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  footer .conteiner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center; }
+    footer .conteiner h3 {
+      text-align: center;
+      padding: 20px;
+      text-transform: uppercase;
+      font-size: 2em;
+      font-weight: 600; }
+    footer .conteiner .footer__ {
+      display: flex;
+      justify-content: space-around; }
+      footer .conteiner .footer__ a {
+        font-size: 3rem; }
+        footer .conteiner .footer__ a .fa-instagram {
+          padding: 10px;
+          color: #fff; }
+          footer .conteiner .footer__ a .fa-instagram:hover {
+            color: #eb4ed4;
+            transform: scale(1.2);
+            transition: all 0.4s; }
+        footer .conteiner .footer__ a .fa-facebook {
+          padding: 10px;
+          color: #fff; }
+          footer .conteiner .footer__ a .fa-facebook:hover {
+            color: #3865c5;
+            transform: scale(1.2);
+            transition: all 0.4s; }
+        footer .conteiner .footer__ a .fa-youtube {
+          padding: 10px;
+          color: #fff; }
+          footer .conteiner .footer__ a .fa-youtube:hover {
+            color: #e43933;
+            transform: scale(1.2);
+            transition: all 0.4s; }
+        footer .conteiner .footer__ a .fa-whatsapp {
+          padding: 10px;
+          color: #fff; }
+          footer .conteiner .footer__ a .fa-whatsapp:hover {
+            color: #25d366;
+            transform: scale(1.2);
+            transition: all 0.4s; }
+    footer .conteiner p {
+      margin: 3rem;
+      margin-bottom: 0;
+      padding-bottom: 3rem; }
+
+@media (min-width: 1024px) {
+  form {
+    max-width: 900px; } }
+
+@media screen and (min-width: 990px) {
+  header {
+    display: block; }
+  .navbar {
+    background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/la14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .navbar-logo {
+    display: none; }
+  .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link {
+    padding: 10px 10px;
+    margin: 0 2rem; }
+  #carouselExampleCaptions {
+    max-width: 1200px;
+    margin: auto; }
+  .season .card a {
+    box-shadow: none; }
+    .season .card a h5 {
+      font-size: 2.2em;
+      margin-top: 10rem;
+      padding-top: 4rem;
+      display: none; }
+  .season .card:hover {
+    box-shadow: 0px 0px 10px 5px #ff0;
+    transition: all 0.5s; }
+    .season .card:hover img {
+      opacity: 0.4; }
+    .season .card:hover h5 {
+      display: block; }
+  .news .cards-conteiner .card a .conteiner-img img {
+    width: 100%;
+    height: 500px; }
+  .deportes ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .deportes ul li {
+      width: 25%; } }

@@ -1,0 +1,19 @@
+
+$titulos: 2.5em;
+$subtitulos: 2em;
+$textos: 1.8em;
+
+$fuentes: (
+    titulo: $titulos,
+    subtitulo: $subtitulos,
+    texto: $textos,
+);
+
+@each $fuente, $tamanho in $fuentes {
+
+    .fuente-#{$fuente} {
+
+        font-size: $tamanho;
+    }
+    
+}

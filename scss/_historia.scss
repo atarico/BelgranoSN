@@ -1,0 +1,24 @@
+.historia{
+    article{
+        background-image: linear-gradient(rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0.7)), url(../media/img/escudo_cancha_bochas.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        div{
+            .historia-titulo{
+                text-align: center;
+                font-size: 2.2em;
+                font-weight: 600;
+                padding: 20px;
+            }
+        }
+
+        .historia-parrafos{
+            text-align: center;
+            font-size: 1.5em;
+            padding: 2rem;
+            
+
+        }
+    }
+}
