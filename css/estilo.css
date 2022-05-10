@@ -89,43 +89,45 @@ section .promociones {
       cursor: pointer;
       transition: all 0.5s; }
 
-main {
+main section .deportes__pages {
+  background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/trofeos.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-bottom: 3px solid #ff0; }
+  main section .deportes__pages .pages__deportes-titulo {
+    background-color: #f00;
+    color: #ff0;
+    text-align: center;
+    padding: 12px; }
+  main section .deportes__pages .pages__deportes__lista ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; }
+    main section .deportes__pages .pages__deportes__lista ul li {
+      margin: 1rem;
+      list-style: none;
+      font-size: 1.5em;
+      padding: 5%;
+      text-shadow: 0px 0px 3px #fff; }
+      main section .deportes__pages .pages__deportes__lista ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 15px; }
+        main section .deportes__pages .pages__deportes__lista ul li a:hover {
+          color: #ff0;
+          background: #f00;
+          border-radius: 2rem;
+          transition: all 0.5s;
+          transform: scale(0.9);
+          box-shadow: 0px 0px 3px 3px #ff0; }
+
+main .bg-deportes {
   background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/equipos_collage.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
-  main section .deportes__pages {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/trofeos.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    border-bottom: 3px solid #ff0; }
-    main section .deportes__pages .pages__deportes-titulo {
-      background-color: #f00;
-      color: #ff0;
-      text-align: center;
-      padding: 12px; }
-    main section .deportes__pages .pages__deportes__lista ul {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      flex-wrap: wrap; }
-      main section .deportes__pages .pages__deportes__lista ul li {
-        margin: 1rem;
-        list-style: none;
-        font-size: 1.5em;
-        padding: 5%; }
-        main section .deportes__pages .pages__deportes__lista ul li a {
-          text-decoration: none;
-          color: #fff;
-          padding: 15px; }
-          main section .deportes__pages .pages__deportes__lista ul li a:hover {
-            color: #ff0;
-            background: #f00;
-            border-radius: 2rem;
-            transition: all 0.5s;
-            transform: scale(0.9);
-            box-shadow: 0px 0px 3px 3px #ff0; }
 
 .body {
   font-family: 'Roboto', sans-serif;
