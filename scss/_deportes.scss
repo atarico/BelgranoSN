@@ -3,7 +3,7 @@ main{
 
     section{
         .deportes__pages{
-            background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/trofeos.jpeg);
+            background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/trofeoscopia.jpeg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -24,10 +24,10 @@ main{
                     flex-wrap: wrap;
             
                     li{
-                        margin: 1rem;
+                        margin: auto;
                         list-style: none;
                         font-size: 1.5em;
-                        padding: 5%;
+                        padding: 2rem;
                         text-shadow: 0px 0px 3px #fff;
             
                         a{
