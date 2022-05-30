@@ -35,6 +35,15 @@
   color: #ff0;
   box-shadow: 0px 0px 10px #ff0; }
 
+#pack_temporada {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  border: none;
+  box-shadow: 0px 0px 5px #000;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 7px; }
+
 .contact-title {
   font-size: 3em;
   font-weight: 600;
@@ -72,9 +81,13 @@ section .promociones {
   width: 96%;
   max-width: 1200px; }
   section .promociones .promociones-temporada .card {
-    margin: 2rem auto; }
+    margin: 2rem auto;
+    box-shadow: 2px 2px 20px #000; }
     section .promociones .promociones-temporada .card img {
-      width: 100%; }
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 1rem;
+      background-image: linear-gradient(100deg, #e3f033 0%, #e7e324 25%, #dc9d27 50%, #c31414 75%, #ff2222 100%); }
     section .promociones .promociones-temporada .card div h4 {
       color: #000;
       text-align: center;
@@ -89,6 +102,21 @@ section .promociones {
       cursor: pointer;
       transition: all 0.5s; }
 
+/* @keyframes Gradient{
+
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: -80rem 0;
+    }
+
+    100%{
+
+        background-position: 0 0;
+    }
+} */
 main section .deportes__pages {
   background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/trofeoscopia.jpeg);
   background-repeat: no-repeat;
@@ -123,15 +151,40 @@ main section .deportes__pages {
           transform: scale(0.9);
           box-shadow: 0px 0px 3px 3px #ff0; }
 
-main .bg-deportes {
-  background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../media/img/equipos_collage.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
+.scroller {
+  height: 300px;
+  max-width: 1500px;
+  padding: 10px;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  column-gap: 1rem;
+  overflow-x: auto; }
+  .scroller .scroller-item {
+    box-shadow: 2px 2px 15px #f00;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border: 4px solid #f0e033;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 500ms ease; }
+    .scroller .scroller-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: all 500ms ease; }
+      .scroller .scroller-item img:hover {
+        transform: scale(1.15);
+        transition: all 0.5s; }
+
+.scroller::-webkit-scrollbar {
+  display: none; }
 
 .body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ff1919;
+  background-color: #ff3232;
   color: #fff; }
 
 header {
@@ -194,18 +247,11 @@ header {
   transform: scale(0.9);
   box-shadow: 0px 0px 3px 3px #ff0; }
 
-/*.navbar{
-    
-     position: sticky;
-    z-index: 100;
-    width: 100%;
-    background: #000;
-} */
 /*---- CAROUSEL ----*/
 #carouselExampleCaptions {
   box-shadow: 2px 2px 20px #000; }
 
-/* ---- CARDS ---- */
+/* ---- TEMPORADA ---- */
 .season {
   width: 90%;
   max-width: 1200px;
@@ -253,42 +299,6 @@ header {
     text-transform: uppercase;
     font-weight: 600;
     opacity: 0.8; }
-  .news .cards-conteiner {
-    width: 90%;
-    margin: 3rem auto 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-    .news .cards-conteiner .card {
-      border: #000;
-      border-radius: 1rem;
-      width: 25rem;
-      margin-bottom: 3rem; }
-      .news .cards-conteiner .card a {
-        box-shadow: 2px 2px 20px #000;
-        background: #f00;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 0.5rem; }
-        .news .cards-conteiner .card a .conteiner-img {
-          border-bottom: 2px solid #ff0;
-          overflow: hidden;
-          transition: all 500ms ease; }
-          .news .cards-conteiner .card a .conteiner-img img {
-            /* width: 100%;
-                        height: 500px; */
-            border-radius: 0.5rem;
-            transition: all 500ms ease; }
-            .news .cards-conteiner .card a .conteiner-img img:hover {
-              transform: scale(1.15);
-              transition: all 0.5s;
-              box-shadow: 0px 0px 6px 3px #ff0; }
-        .news .cards-conteiner .card a .titulo {
-          padding: 15px;
-          color: #ff0;
-          font-weight: 600;
-          text-transform: uppercase; }
 
 /* ---- LISTA DE DEPORTES ---- */
 .deportes {
@@ -305,12 +315,15 @@ header {
     text-align: center;
     padding: 12px; }
   .deportes ul {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    margin: 2rem auto; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
     .deportes ul li {
-      margin: 1rem;
+      margin: 1.5rem;
       list-style: none;
       font-size: 1.5em;
       font-weight: 600;
@@ -327,6 +340,12 @@ header {
           transition: all 0.5s;
           transform: scale(0.9);
           box-shadow: 0px 0px 3px 3px #ff0; }
+    .deportes ul span {
+      display: none; }
+
+ol, ul {
+  padding-right: 3rem;
+  padding-left: 0; }
 
 /* ---- FOOTER ---- */
 footer {
@@ -380,15 +399,25 @@ footer {
             transform: scale(1.2);
             transition: all 0.4s; }
     footer .conteiner p {
+      font-size: 1.2em;
       margin: 3rem;
       margin-bottom: 0;
       padding-bottom: 3rem; }
 
-@media (min-width: 1024px) {
-  form {
-    max-width: 900px; } }
+@media screen and (min-width: 360px) {
+  .deportes ul li {
+    width: 25%; }
+    .deportes ul li a span {
+      display: block; } }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 891px) {
+  .news .cards-conteiner .card a .conteiner-img {
+    height: 450px; }
+    .news .cards-conteiner .card a .conteiner-img img {
+      width: 100%;
+      height: 100%; } }
+
+@media screen and (min-width: 1024px) {
   header {
     display: block; }
   .navbar {
@@ -408,7 +437,7 @@ footer {
     box-shadow: none; }
     .season .card a h5 {
       font-size: 2.2em;
-      margin-top: 10rem;
+      margin: auto;
       padding-top: 4rem;
       display: none; }
   .season .card:hover {
@@ -418,13 +447,12 @@ footer {
       opacity: 0.4; }
     .season .card:hover h5 {
       display: block; }
-  .news .cards-conteiner .card a .conteiner-img img {
-    width: 100%;
-    height: 500px; }
   .deportes ul {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center; }
     .deportes ul li {
-      width: 25%; } }
+      width: 25%; }
+  form {
+    max-width: 900px; } }

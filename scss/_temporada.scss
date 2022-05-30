@@ -11,9 +11,14 @@ section{
             .card{
 
                 margin: 2rem auto;
+                box-shadow: 2px 2px 20px #000;
                 
                 img{
                     width: 100%;
+                    padding: 0.5rem;
+                    margin-top: 1rem;
+                    background-image: linear-gradient(100deg, #e3f033 0%, #e7e324 25%, #dc9d27 50%, #c31414 75%, #ff2222 100%);
+                    
                 }
                 div{
                     h4{
@@ -41,3 +46,19 @@ section{
         }
     }
 }
+
+/* @keyframes Gradient{
+
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: -80rem 0;
+    }
+
+    100%{
+
+        background-position: 0 0;
+    }
+} */
