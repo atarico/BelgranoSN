@@ -45,7 +45,8 @@
   border-radius: 7px; }
 
 .contact-title {
-  font-size: 3em;
+  max-width: 900px;
+  font-size: 2.2em;
   font-weight: 600;
   text-transform: uppercase; }
 
@@ -80,7 +81,11 @@ section .promociones {
   margin: auto;
   width: 96%;
   max-width: 1200px; }
+  section .promociones .promociones-temporada a {
+    text-decoration: none; }
   section .promociones .promociones-temporada .card {
+    max-width: 22rem;
+    padding: 0.5rem;
     margin: 2rem auto;
     box-shadow: 2px 2px 20px #000; }
     section .promociones .promociones-temporada .card img {

@@ -8,8 +8,14 @@ section{
 
         .promociones-temporada{
 
+            a{
+                text-decoration: none;
+            }
+
             .card{
 
+                max-width: 22rem;
+                padding: 0.5rem;
                 margin: 2rem auto;
                 box-shadow: 2px 2px 20px #000;
                 
